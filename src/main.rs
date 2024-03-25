@@ -1,5 +1,6 @@
 use clap::{Parser, Subcommand};
 mod cmd;
+mod scripts;
 
 #[derive(Parser)] // requires `derive` feature
 #[command(version, about, long_about = None)]
@@ -18,7 +19,9 @@ fn main() {
 
     match opts.subcommand {
         SubCommands::Create(c) => {
-            println!("Sub Command: Create Called. {}", c.package_name);
+           let pkg_bins = scripts::check_pkg_managers();
+
+           println!("{:?}", pkg_bins);
         },
     }
 }
