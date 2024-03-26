@@ -19,7 +19,17 @@ fn main() {
 
     match opts.subcommand {
         SubCommands::Create(c) => {
+           let mut package_name = "";
+           match c.package_name.as_str() {
+            "astro" => {
+                package_name = "astro-latest";
+            }
+            _ => {
+                package_name = &c.package_name;
+            }
+           }
            let pkg_bins = scripts::check_pkg_managers();
+           println!("PKG Name: {:?}", package_name);
 
            println!("{:?}", pkg_bins);
         },
