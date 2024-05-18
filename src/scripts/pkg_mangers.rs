@@ -20,5 +20,5 @@ pub fn check_pkg_managers() -> Vec<String> {
         }
     }
 
-    (pkg_managers_installed)
+    pkg_managers_installed
 }

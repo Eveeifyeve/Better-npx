@@ -1,6 +1,6 @@
 > [!WARNING]
-> Archived due to a better tool out there called [ni](https://github.com/antfu-collective/ni)
-> But I will make a rust clone of the tool that is much better. So for now this project is archive until there is a use for it.
+> Archived due to the discovery of a superior tool, [ni](https://github.com/antfu-collective/ni). A Rust/Zig clone of ni is planned for future development for performance. Stay tuned for updates!
+
 
 # Better-npx
 A better version of npx.
